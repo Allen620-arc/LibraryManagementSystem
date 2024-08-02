@@ -12,9 +12,12 @@ namespace LibraryManagementSystem
 {
     public partial class BorrowBookForm : Form
     {
-        public BorrowBookForm()
+        private Library library;
+
+        public BorrowBookForm(Library library)
         {
             InitializeComponent();
+            this.library = library;
         }
     }
 }

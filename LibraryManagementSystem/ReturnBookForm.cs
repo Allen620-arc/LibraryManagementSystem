@@ -12,9 +12,22 @@ namespace LibraryManagementSystem
 {
     public partial class ReturnBookForm : Form
     {
-        public ReturnBookForm()
+        private Library library;
+
+        public ReturnBookForm(Library library)
         {
             InitializeComponent();
+            this.library = library;
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            int bookId = Convert.ToInt32(txtBookID.Text);
+            int memberId = Convert.ToInt32(txtMemberID.Text);
+
+            library.ReturnBook(bookId, memberId);
+            MessageBox.Show("Book returned successfully!");
+            this.Close();
         }
     }
 }

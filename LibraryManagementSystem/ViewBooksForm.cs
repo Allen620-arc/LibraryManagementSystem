@@ -12,9 +12,19 @@ namespace LibraryManagementSystem
 {
     public partial class ViewBooksForm : Form
     {
-        public ViewBooksForm()
+        private Library library;
+
+        public ViewBooksForm(Library library)
         {
             InitializeComponent();
+            this.library = library;
+            LoadBooks();
+        }
+
+        private void LoadBooks()
+        {
+            dgvBooks.DataSource = null;
+            dgvBooks.DataSource = library.GetAllBooks();
         }
     }
 }
