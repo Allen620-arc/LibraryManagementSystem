@@ -1,6 +1,3 @@
-Sure! Here’s how the README would look in Markdown format:
-
-```markdown
 # Library Management System
 
 ## Description
