@@ -19,5 +19,15 @@ namespace LibraryManagementSystem
             InitializeComponent();
             this.library = library;
         }
+
+        private void Borrow_Click(object sender, EventArgs e)
+        {
+            int bookId = Convert.ToInt32(txtBookID.Text);
+            int memberId = Convert.ToInt32(txtMemberID.Text);
+
+            library.BorrowBook(bookId, memberId);
+            MessageBox.Show("Book borrowed successfully!");
+            this.Close();
+        }
     }
 }

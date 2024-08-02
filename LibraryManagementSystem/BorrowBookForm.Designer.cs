@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Borrow = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMemberID = new System.Windows.Forms.TextBox();
+            this.txtBookID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Borrow
             // 
-            this.button1.Location = new System.Drawing.Point(122, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Borrow";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Borrow.Location = new System.Drawing.Point(122, 68);
+            this.Borrow.Name = "Borrow";
+            this.Borrow.Size = new System.Drawing.Size(75, 23);
+            this.Borrow.TabIndex = 20;
+            this.Borrow.Text = "Borrow";
+            this.Borrow.UseVisualStyleBackColor = true;
+            this.Borrow.Click += new System.EventHandler(this.Borrow_Click);
             // 
             // label2
             // 
@@ -62,30 +63,30 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Book ID";
             // 
-            // textBox2
+            // txtMemberID
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 22);
-            this.textBox2.TabIndex = 15;
+            this.txtMemberID.Location = new System.Drawing.Point(91, 40);
+            this.txtMemberID.Name = "txtMemberID";
+            this.txtMemberID.Size = new System.Drawing.Size(216, 22);
+            this.txtMemberID.TabIndex = 15;
             // 
-            // textBox1
+            // txtBookID
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 22);
-            this.textBox1.TabIndex = 14;
+            this.txtBookID.Location = new System.Drawing.Point(91, 12);
+            this.txtBookID.Name = "txtBookID";
+            this.txtBookID.Size = new System.Drawing.Size(216, 22);
+            this.txtBookID.TabIndex = 14;
             // 
             // BorrowBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 96);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Borrow);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMemberID);
+            this.Controls.Add(this.txtBookID);
             this.Name = "BorrowBookForm";
             this.Text = "Borrow Book Form";
             this.ResumeLayout(false);
@@ -95,10 +96,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Borrow;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMemberID;
+        private System.Windows.Forms.TextBox txtBookID;
     }
 }

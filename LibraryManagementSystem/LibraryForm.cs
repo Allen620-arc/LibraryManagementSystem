@@ -17,6 +17,12 @@ namespace LibraryManagementSystem
         public LibraryForm()
         {
             InitializeComponent();
+            InitializeLibrary();
+        }
+
+        private void InitializeLibrary()
+        {
+            library = new Library();
         }
 
         private void AddBook_Click(object sender, EventArgs e)

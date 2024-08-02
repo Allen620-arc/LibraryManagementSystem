@@ -39,14 +39,14 @@
             this.dgvBooks.Name = "dgvBooks";
             this.dgvBooks.RowHeadersWidth = 51;
             this.dgvBooks.RowTemplate.Height = 24;
-            this.dgvBooks.Size = new System.Drawing.Size(284, 162);
+            this.dgvBooks.Size = new System.Drawing.Size(580, 287);
             this.dgvBooks.TabIndex = 0;
             // 
             // ViewBooksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 186);
+            this.ClientSize = new System.Drawing.Size(604, 311);
             this.Controls.Add(this.dgvBooks);
             this.Name = "ViewBooksForm";
             this.Text = "ViewBooksForm";
